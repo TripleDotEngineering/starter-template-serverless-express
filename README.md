@@ -34,6 +34,7 @@ deploy_packages_bucket    = "your-lambda-bucket-name"
 function_name             = "MyLambdaService"
 domain_name               = "example.mydomain.com" 
 tls_certificate_arn       = "Your TLS Certificate ARN"
+hosted_zone_id            = "Your Hosted Zone ID"
 ```
 
 ### Do a Dry Run

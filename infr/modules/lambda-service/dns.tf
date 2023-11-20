@@ -14,7 +14,7 @@ resource "aws_apigatewayv2_domain_name" "dns" {
 resource "aws_route53_record" "dns_record" {
   name    = aws_apigatewayv2_domain_name.dns.domain_name
   type    = "A"
-  zone_id = "Z00983702P8R9770PC701"
+  zone_id = "${var.hosted_zone_id}}"
 
   alias {
     name                   = aws_apigatewayv2_domain_name.dns.domain_name_configuration[0].target_domain_name

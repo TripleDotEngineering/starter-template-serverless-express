@@ -29,6 +29,11 @@ variable "tls_certificate_arn" {
   type        = string
 }
 
+variable "hosted_zone_id" {
+  description = "The hosted zone ID for the domain name"
+  type        = string
+}
+
 
 /*----------( Optional - Configuration Variables )----------*/
 
